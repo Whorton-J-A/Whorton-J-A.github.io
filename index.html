@@ -102,30 +102,24 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="mt-0">Contact Me</h2>
                     <hr class="divider" />
-                    <p class="text-muted mb-5">Have questions? Fill out the form below and I'll get back to you as soon as possible!</p>
+                    <p class="text-muted mb-5">Have questions? E-mail me and I'll get back to you as soon as possible!</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form action="send_email.php" method="POST">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name" required />
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject" />
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 150px" required></textarea>
-                            <label for="message">Message</label>
+           
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary btn-xl" type="submit">Send Message</button>
+                            <script>
+                        function composeEmail() {
+        // Open the email client with a pre-populated recipient, subject, and body
+                        window.location.href = "mailto:miawhorton@gmail.com.com?subject=Let's Connect&body=Hi, I would like to get in touch!";
+                                    }
+                                </script>
+                            
+                            <button class="btn btn-primary btn-xl" type="submit">Send email</button>
+                            <button onclick="composeEmail()">Compose Email</button>
+
+    
+                            <button class="btn btn-primary btn-xl" type="submit">Send email</button>
                         </div>
                     </form>
                 </div>
