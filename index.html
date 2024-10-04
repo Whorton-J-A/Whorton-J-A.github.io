@@ -94,7 +94,39 @@
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/Untitled - Frame 0.jpg" alt="Project 3" />
                     </a>
                 </div>
+                <section id="contact">
+  <h2>Contact</h2>
+  <p>If you have any questions or inquiries, please fill out the form below and we will get back to you as soon as possible.</p>
+  
+  <form action="send_email.php" method="POST">
+    <div>
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <div>
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject">
+    </div>
+    <br>
+    <div>
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <br>
+    <div>
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</section>
+
             </div>
+            
         </div>
     </section>
 </body>
